@@ -20,7 +20,7 @@ backToTopButton.addEventListener('click', () => {
 });
 
 window.addEventListener('scroll', () => {
-	if (window.scrollY > 1000) {
+	if (window.scrollY > 800) {
 		backToTopButton.classList.remove('d-none');
 	} else {
 		backToTopButton.classList.add('d-none');
@@ -32,7 +32,7 @@ const scrollDownButton = document.getElementById('scrollDownButton');
 
 scrollDownButton.addEventListener('click', () => {
 	window.scrollBy({
-		top: 800,
+		top: 1000,
 		behavior: 'smooth',
 	});
 });
