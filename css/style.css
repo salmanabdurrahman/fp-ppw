@@ -296,7 +296,7 @@
 /* ! index.html start */
 /* ? hero start */
 .hero {
-	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('images/hero.jpg') no-repeat center center;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('../images/hero.jpg') no-repeat center center;
 	background-size: cover;
 	height: 100vh;
 	color: #fff;
@@ -425,7 +425,7 @@
 /* ! destinations.html start */
 /* ? hero start */
 .hero-second {
-	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('images/package.jpg') no-repeat center center;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('../images/package.jpg') no-repeat center center;
 	background-size: cover;
 	height: 60vh;
 	color: #fff;
@@ -496,7 +496,7 @@
 /* ! blog.html start */
 /* ? hero start */
 .hero-third {
-	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('images/blog.jpg') no-repeat center center;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('../images/blog.jpg') no-repeat center center;
 	background-size: cover;
 	height: 60vh;
 	color: #fff;
@@ -578,7 +578,7 @@
 /* ! about.html start */
 /* ? hero start */
 .hero-fourth {
-	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('images/about.jpg') no-repeat center center;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('../images/about.jpg') no-repeat center center;
 	background-size: cover;
 	height: 60vh;
 	color: #fff;
@@ -593,7 +593,7 @@
 /* ! contact.html start */
 /* ? hero start */
 .hero-fifth {
-	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('images/contact.jpg') no-repeat center center;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('../images/contact.jpg') no-repeat center center;
 	background-size: cover;
 	height: 60vh;
 	color: #fff;
