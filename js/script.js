@@ -1,5 +1,5 @@
-// ! sticky navbar
-window.addEventListener('scroll', function () {
+// ! STICKY NAVBAR
+window.addEventListener('scroll', () => {
 	var navbar = document.querySelector('.navbar');
 	if (window.pageYOffset > 45) {
 		navbar.classList.add('sticky-top', 'shadow-sm');
@@ -8,87 +8,96 @@ window.addEventListener('scroll', function () {
 	}
 });
 
-// ! scroll down button
+// ! BACK TO TOP BUTTON
+const backToTopButton = document.querySelector('.back-to-top');
+backToTopButton.classList.add('d-none');
+
+backToTopButton.addEventListener('click', () => {
+	window.scrollTo({
+		top: 0,
+		behavior: 'smooth',
+	});
+});
+
+window.addEventListener('scroll', () => {
+	if (window.scrollY > 1000) {
+		backToTopButton.classList.remove('d-none');
+	} else {
+		backToTopButton.classList.add('d-none');
+	}
+});
+
+// ! SCROLL DOWN BUTTON
 const scrollDownButton = document.getElementById('scrollDownButton');
 
 scrollDownButton.addEventListener('click', () => {
 	window.scrollBy({
-		top: 1000, // Jarak dalam piksel yang ingin digulirkan
-		behavior: 'smooth', // Animasi perlahan saat menggulir
+		top: 800,
+		behavior: 'smooth',
 	});
 });
 
-// ! search input
-var searchInput = document.getElementById('searchInput');
-var searchButton = document.getElementById('searchButton');
+// ! SEARCH INPUT
+const searchInput = document.getElementById('searchInput');
+const searchButton = document.getElementById('searchButton');
 
 searchButton.addEventListener('click', () => {
 	if (searchInput.value === '') {
 		window.alert('Please enter a city name');
 	} else {
 		window.alert('I apologize, but what you’re looking for is not available');
+		searchInput.value = '';
 	}
 });
 
-// ! booking input
-// const bookingButton = document.getElementById('bookingButton');
+// ! BOOKING INPUT
+const bookingButton = document.getElementById('bookingButton');
 
-// bookingButton.addEventListener('click', function () {
-// 	// Mengambil nilai dari setiap input dan select
-// 	const inputName = document.getElementById('inputName').value;
-// 	const inputEmail = document.getElementById('inputEmail').value;
-// 	const inputDateTime = document.getElementById('inputDateTime').value;
-// 	const selectDestination = document.getElementById('selectDestination').value;
-// 	const selectPerson = document.getElementById('selectPerson').value;
-// 	const selectCategories = document.getElementById('selectCategories').value;
-// 	const spesialMessage = document.getElementById('spesialMessage').value;
+function verificationBookingInput() {
+	const inputName = document.getElementById('inputName').value;
+	const inputEmail = document.getElementById('inputEmail').value;
+	const inputDateTime = document.getElementById('inputDateTime').value;
+	const selectDestination = document.getElementById('selectDestination').value;
+	const selectPerson = document.getElementById('selectPerson').value;
+	const selectCategories = document.getElementById('selectCategories').value;
+	const spesialMessage = document.getElementById('spesialMessage').value;
 
-// 	// Memeriksa apakah ada yang kosong
-// 	if (inputName === '' || inputEmail === '' || inputDateTime === '' || selectDestination === '' || selectPerson === '' || selectCategories === '' || spesialMessage === '') {
-// 		alert('Please fill out all the forms before making a booking');
-// 	} else {
-// 		alert('Thank you for booking on our website');
-// 	}
-// });
-
-// ! subscribe input
-// Temukan semua input dan tombol berdasarkan pola ID
-for (let i = 1; i <= 5; i++) {
-	const subscribeInput = document.getElementById(`subscribeInput${i}`);
-	const subscribeButton = document.getElementById(`subscribeButton${i}`);
-
-	// Tambahkan event listener untuk setiap tombol
-	subscribeButton.addEventListener('click', function () {
-		if (subscribeInput.value === '') {
-			window.alert('Please enter a email address');
-		} else {
-			window.alert('Thank you for subscribing!');
-			subscribeInput.value = '';
-		}
-	});
-}
-
-// ! back to top
-var backToTopButton = document.querySelector('.back-to-top');
-backToTopButton.style.display = 'none';
-
-function toggleBackToTopButton() {
-	if (window.scrollY > 300) {
-		backToTopButton.style.display = 'flex';
-		// backToTopButton.style.opacity = '1';
+	if (inputName === '' || inputEmail === '' || inputDateTime === '' || selectDestination === '' || selectPerson === '' || selectCategories === '' || spesialMessage === '') {
+		window.alert('Please fill in all the data on the form and the sentence');
 	} else {
-		backToTopButton.style.display = 'none';
-		// backToTopButton.style.opacity = '0';
+		window.alert('Thank you for booking tickets on our website');
+		setTimeout(function () {
+			location.reload();
+		}, 500);
 	}
 }
 
-window.addEventListener('scroll', toggleBackToTopButton);
+// ! SUBSCRIBE INPUT
+function verificationEmailInput() {
+	const subscribeInput = document.getElementById('subscribeInput');
+	let emailInput = subscribeInput.value;
 
-function scrollToTop() {
-	window.scrollTo({
-		top: 0,
-		behavior: 'smooth',
-	});
+	if (emailInput === '') {
+		window.alert('Please enter a email address');
+	} else {
+		window.alert('Thank you for subscribing to our newsletter');
+		subscribeInput.value = '';
+	}
 }
 
-backToTopButton.addEventListener('click', scrollToTop);
+// ! CONTACT INPUT
+function verificationContactInput() {
+	const contactName = document.getElementById('contactName').value;
+	const contactEmail = document.getElementById('contactEmail').value;
+	const contactSubject = document.getElementById('contactSubject').value;
+	const contactMessage = document.getElementById('contactMessage').value;
+
+	if (contactName === '' || contactEmail === '' || contactSubject === '' || contactMessage === '') {
+		window.alert('Please fill in all the data on the form and the sentence');
+	} else {
+		window.alert('Thank you for contacting us');
+		setTimeout(function () {
+			location.reload();
+		}, 500);
+	}
+}
