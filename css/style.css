@@ -427,7 +427,7 @@
 .hero-second {
 	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('/images/package.jpg') no-repeat center center;
 	background-size: cover;
-	height: 50vh;
+	height: 60vh;
 	color: #fff;
 	display: flex;
 	align-items: center;
@@ -498,7 +498,7 @@
 .hero-third {
 	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('/images/blog.jpg') no-repeat center center;
 	background-size: cover;
-	height: 50vh;
+	height: 60vh;
 	color: #fff;
 	display: flex;
 	align-items: center;
@@ -580,7 +580,7 @@
 .hero-fifth {
 	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('/images/contact.jpg') no-repeat center center;
 	background-size: cover;
-	height: 50vh;
+	height: 60vh;
 	color: #fff;
 	display: flex;
 	align-items: center;
