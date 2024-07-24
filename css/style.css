@@ -574,3 +574,29 @@
 }
 /* ? blog end */
 /* ! blog.html end */
+
+/* ! contact.html start */
+/* ? hero start */
+.hero-fifth {
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('/images/contact.jpg') no-repeat center center;
+	background-size: cover;
+	height: 50vh;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+/* ? hero end */
+
+/* ? contact start */
+.contact .container form .btn.btn-primary {
+	box-shadow: inset 0 0 0 0 var(--bs-primary);
+}
+
+.contact .container form .btn.btn-primary:hover {
+	box-shadow: inset 1000px 0 0 0 var(--bs-light) !important;
+	color: var(--bs-primary) !important;
+}
+/* ? contact end */
+/* ! contact.html end */
