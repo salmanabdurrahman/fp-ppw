@@ -1,289 +1,564 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>RWS - Tour Website</title>
-		<!-- bootstrap -->
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-		<!-- custom css -->
-		<link rel="stylesheet" href="css/style.css" />
-		<!-- favicon -->
-		<link rel="shortcut icon" href="icons/favicon.png" type="image/x-icon" />
-		<!-- google fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
-		<!-- box icons -->
-		<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-	</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RWS - Tour Website</title>
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="icons/favicon.png" type="image/x-icon" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
-	<body>
-		<!-- ? navbar and hero start -->
-		<div class="container-fluid position-relative p-0">
-			<nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-				<a href="index.html" class="navbar-brand p-0">
-					<h1 class="m-0 fw-bold"><i class="fa fa-map-marker-alt me-3"></i>RWS</h1>
-					<!-- <img src="img/logo.png" alt="Logo"> -->
-				</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-					<span class="fa fa-bars"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarCollapse">
-					<div class="navbar-nav ms-auto py-0">
-						<a href="index.html" class="nav-item nav-link">Home</a>
-						<a href="destinations.html" class="nav-item nav-link">Destinations</a>
-						<a href="blog.html" class="nav-item nav-link">Blog</a>
-						<a href="about.html" class="nav-item nav-link">About Us</a>
-						<a href="contact.html" class="nav-item nav-link">Contact</a>
-					</div>
-					<a href="destinations.html#booking" class="btn btn-primary rounded-pill py-2 px-4 ms-lg-4">Book Now</a>
-				</div>
-			</nav>
+  <body>
+    <!-- ? navbar and hero start -->
+    <div class="container-fluid position-relative p-0">
+      <nav
+        class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0"
+      >
+        <a href="index.html" class="navbar-brand p-0">
+          <h1 class="m-0 fw-bold">
+            <i class="fa fa-map-marker-alt me-3"></i>RWS
+          </h1>
+          <!-- <img src="img/logo.png" alt="Logo"> -->
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto py-0">
+            <a href="index.html" class="nav-item nav-link">Home</a>
+            <a href="destinations.html" class="nav-item nav-link"
+              >Destinations</a
+            >
+            <a href="blog.html" class="nav-item nav-link">Blog</a>
+            <a href="about.html" class="nav-item nav-link">About Us</a>
+            <a href="contact.html" class="nav-item nav-link">Contact</a>
+          </div>
+          <a
+            href="destinations.html#booking"
+            class="btn btn-primary rounded-pill py-2 px-4 ms-lg-4"
+            >Book Now</a
+          >
+        </div>
+      </nav>
 
-			<!-- hero -->
-			<section class="hero-third">
-				<div class="container-fluid bg-breadcrumb">
-					<div class="container text-center py-5" style="max-width: 900px">
-						<h3 class="text-white display-3 mb-4 fw-bold">Our Blog</h3>
-						<ol class="breadcrumb justify-content-center mb-0">
-							<li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">Home</a></li>
-							<li class="breadcrumb-item"><a href="#" class="text-decoration-none">Pages</a></li>
-							<li class="breadcrumb-item active text-white">Blog</li>
-						</ol>
-					</div>
-				</div>
-			</section>
-		</div>
-		<!-- ? navbar and hero end -->
+      <!-- hero -->
+      <section class="hero-third">
+        <div class="container-fluid bg-breadcrumb">
+          <div class="container text-center py-5" style="max-width: 900px">
+            <h3 class="text-white display-3 mb-4 fw-bold">Our Blog</h3>
+            <ol class="breadcrumb justify-content-center mb-0">
+              <li class="breadcrumb-item">
+                <a href="index.html" class="text-decoration-none">Home</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="#" class="text-decoration-none">Pages</a>
+              </li>
+              <li class="breadcrumb-item active text-white">Blog</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- ? navbar and hero end -->
 
-		<!-- ? blog start -->
-		<div class="container-fluid service blog py-5">
-			<div class="container py-5">
-				<div class="mx-auto text-center mb-5" style="max-width: 900px">
-					<h5 class="section-title px-3">Blog</h5>
-					<h1 class="mb-0">Our Latest Blog</h1>
-				</div>
-				<div class="row g-4 justify-content-center">
-					<div class="col-lg-4 col-md-6">
-						<div class="blog-item">
-							<div class="blog-img">
-								<div class="blog-img-inner">
-									<img class="img-fluid w-100 rounded-top" src="images/blog1.jpg" alt="Image" />
-									<div class="blog-icon">
-										<a href="#" class="my-auto text-decoration-none"><i class="bx bxs-book-add text-white fs-2"></i></a>
-									</div>
-								</div>
-								<div class="blog-info d-flex align-items-center border border-start-0 border-end-0 justify-content-center">
-									<small class="flex-fill text-center border-end py-2"><i class="bx bxs-calendar-alt text-primary me-2 fs-5"></i>28 Jan 2024</small>
-									<a href="#" class="btn-hover flex-fill text-center text-white border-end py-2"><i class="bx bxs-like text-primary me-2 fs-5"></i>1.7K</a>
-									<a href="#" class="btn-hover flex-fill text-center text-white py-2"><i class="bx bxs-message-rounded text-primary me-2 fs-5"></i>1K</a>
-								</div>
-							</div>
-							<div class="blog-content border border-top-0 rounded-bottom p-4">
-								<p class="mb-3">Posted By: <span class="text-secondary">Royal Hamblin</span></p>
-								<a href="#" class="h4 text-decoration-none">Adventures Trip</a>
-								<p class="my-3">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam eos</p>
-								<a href="#" class="btn btn-primary rounded-pill py-2 px-4">Read More</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="blog-item">
-							<div class="blog-img">
-								<div class="blog-img-inner">
-									<img class="img-fluid w-100 rounded-top" src="images/blog1.jpg" alt="Image" />
-									<div class="blog-icon">
-										<a href="#" class="my-auto text-decoration-none"><i class="bx bxs-book-add text-white fs-2"></i></a>
-									</div>
-								</div>
-								<div class="blog-info d-flex align-items-center border border-start-0 border-end-0 justify-content-center">
-									<small class="flex-fill text-center border-end py-2"><i class="bx bxs-calendar-alt text-primary me-2 fs-5"></i>28 Jan 2024</small>
-									<a href="#" class="btn-hover flex-fill text-center text-white border-end py-2"><i class="bx bxs-like text-primary me-2 fs-5"></i>1.7K</a>
-									<a href="#" class="btn-hover flex-fill text-center text-white py-2"><i class="bx bxs-message-rounded text-primary me-2 fs-5"></i>1K</a>
-								</div>
-							</div>
-							<div class="blog-content border border-top-0 rounded-bottom p-4">
-								<p class="mb-3">Posted By: <span class="text-secondary">Royal Hamblin</span></p>
-								<a href="#" class="h4 text-decoration-none">Adventures Trip</a>
-								<p class="my-3">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam eos</p>
-								<a href="#" class="btn btn-primary rounded-pill py-2 px-4">Read More</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="blog-item">
-							<div class="blog-img">
-								<div class="blog-img-inner">
-									<img class="img-fluid w-100 rounded-top" src="images/blog2.jpg" alt="Image" />
-									<div class="blog-icon">
-										<a href="#" class="my-auto text-decoration-none"><i class="bx bxs-book-add text-white fs-2"></i></a>
-									</div>
-								</div>
-								<div class="blog-info d-flex align-items-center border border-start-0 border-end-0 justify-content-center">
-									<small class="flex-fill text-center border-end py-2"><i class="bx bxs-calendar-alt text-primary me-2 fs-5"></i>28 Jan 2024</small>
-									<a href="#" class="btn-hover flex-fill text-center text-white border-end py-2"><i class="bx bxs-like text-primary me-2 fs-5"></i>1.7K</a>
-									<a href="#" class="btn-hover flex-fill text-center text-white py-2"><i class="bx bxs-message-rounded text-primary me-2 fs-5"></i>1K</a>
-								</div>
-							</div>
-							<div class="blog-content border border-top-0 rounded-bottom p-4">
-								<p class="mb-3">Posted By: <span class="text-secondary">Royal Hamblin</span></p>
-								<a href="#" class="h4 text-decoration-none">Adventures Trip</a>
-								<p class="my-3">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam eos</p>
-								<a href="#" class="btn btn-primary rounded-pill py-2 px-4">Read More</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="blog-item">
-							<div class="blog-img">
-								<div class="blog-img-inner">
-									<img class="img-fluid w-100 rounded-top" src="images/blog2.jpg" alt="Image" />
-									<div class="blog-icon">
-										<a href="#" class="my-auto text-decoration-none"><i class="bx bxs-book-add text-white fs-2"></i></a>
-									</div>
-								</div>
-								<div class="blog-info d-flex align-items-center border border-start-0 border-end-0 justify-content-center">
-									<small class="flex-fill text-center border-end py-2"><i class="bx bxs-calendar-alt text-primary me-2 fs-5"></i>28 Jan 2024</small>
-									<a href="#" class="btn-hover flex-fill text-center text-white border-end py-2"><i class="bx bxs-like text-primary me-2 fs-5"></i>1.7K</a>
-									<a href="#" class="btn-hover flex-fill text-center text-white py-2"><i class="bx bxs-message-rounded text-primary me-2 fs-5"></i>1K</a>
-								</div>
-							</div>
-							<div class="blog-content border border-top-0 rounded-bottom p-4">
-								<p class="mb-3">Posted By: <span class="text-secondary">Royal Hamblin</span></p>
-								<a href="#" class="h4 text-decoration-none">Adventures Trip</a>
-								<p class="my-3">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam eos</p>
-								<a href="#" class="btn btn-primary rounded-pill py-2 px-4">Read More</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="blog-item">
-							<div class="blog-img">
-								<div class="blog-img-inner">
-									<img class="img-fluid w-100 rounded-top" src="images/blog1.jpg" alt="Image" />
-									<div class="blog-icon">
-										<a href="#" class="my-auto text-decoration-none"><i class="bx bxs-book-add text-white fs-2"></i></a>
-									</div>
-								</div>
-								<div class="blog-info d-flex align-items-center border border-start-0 border-end-0 justify-content-center">
-									<small class="flex-fill text-center border-end py-2"><i class="bx bxs-calendar-alt text-primary me-2 fs-5"></i>28 Jan 2024</small>
-									<a href="#" class="btn-hover flex-fill text-center text-white border-end py-2"><i class="bx bxs-like text-primary me-2 fs-5"></i>1.7K</a>
-									<a href="#" class="btn-hover flex-fill text-center text-white py-2"><i class="bx bxs-message-rounded text-primary me-2 fs-5"></i>1K</a>
-								</div>
-							</div>
-							<div class="blog-content border border-top-0 rounded-bottom p-4">
-								<p class="mb-3">Posted By: <span class="text-secondary">Royal Hamblin</span></p>
-								<a href="#" class="h4 text-decoration-none">Adventures Trip</a>
-								<p class="my-3">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam eos</p>
-								<a href="#" class="btn btn-primary rounded-pill py-2 px-4">Read More</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="blog-item">
-							<div class="blog-img">
-								<div class="blog-img-inner">
-									<img class="img-fluid w-100 rounded-top" src="images/blog1.jpg" alt="Image" />
-									<div class="blog-icon">
-										<a href="#" class="my-auto text-decoration-none"><i class="bx bxs-book-add text-white fs-2"></i></a>
-									</div>
-								</div>
-								<div class="blog-info d-flex align-items-center border border-start-0 border-end-0 justify-content-center">
-									<small class="flex-fill text-center border-end py-2"><i class="bx bxs-calendar-alt text-primary me-2 fs-5"></i>28 Jan 2024</small>
-									<a href="#" class="btn-hover flex-fill text-center text-white border-end py-2"><i class="bx bxs-like text-primary me-2 fs-5"></i>1.7K</a>
-									<a href="#" class="btn-hover flex-fill text-center text-white py-2"><i class="bx bxs-message-rounded text-primary me-2 fs-5"></i>1K</a>
-								</div>
-							</div>
-							<div class="blog-content border border-top-0 rounded-bottom p-4">
-								<p class="mb-3">Posted By: <span class="text-secondary">Royal Hamblin</span></p>
-								<a href="#" class="h4 text-decoration-none">Adventures Trip</a>
-								<p class="my-3">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam eos</p>
-								<a href="#" class="btn btn-primary rounded-pill py-2 px-4">Read More</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- ? blog end -->
+    <!-- ? blog start -->
+    <div class="container-fluid service blog py-5">
+      <div class="container py-5">
+        <div class="mx-auto text-center mb-5" style="max-width: 900px">
+          <h5 class="section-title px-3">Blog</h5>
+          <h1 class="mb-0">Our Latest Blog</h1>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-4 col-md-6">
+            <div class="blog-item">
+              <div class="blog-img">
+                <div class="blog-img-inner">
+                  <img
+                    class="img-fluid w-100 rounded-top"
+                    src="images/blog1.jpg"
+                    alt="Image"
+                  />
+                  <div class="blog-icon">
+                    <a href="#" class="my-auto text-decoration-none"
+                      ><i class="bx bxs-book-add text-white fs-2"></i
+                    ></a>
+                  </div>
+                </div>
+                <div
+                  class="blog-info d-flex align-items-center border border-start-0 border-end-0 justify-content-center"
+                >
+                  <small class="flex-fill text-center border-end py-2"
+                    ><i class="bx bxs-calendar-alt text-primary me-2 fs-5"></i
+                    >31 Jan 2024</small
+                  >
+                  <a
+                    href="#"
+                    class="btn-hover flex-fill text-center text-white border-end py-2"
+                    ><i class="bx bxs-like text-primary me-2 fs-5"></i>1.7K</a
+                  >
+                  <a
+                    href="#"
+                    class="btn-hover flex-fill text-center text-white py-2"
+                    ><i
+                      class="bx bxs-message-rounded text-primary me-2 fs-5"
+                    ></i
+                    >1K</a
+                  >
+                </div>
+              </div>
+              <div class="blog-content border border-top-0 rounded-bottom p-4">
+                <p class="mb-3">
+                  Posted By: <span class="text-secondary">Rama Danadipa</span>
+                </p>
+                <a href="#" class="h4 text-decoration-none"
+                  >Discover the Enchantment of Santorini's Sunsets</a
+                >
+                <p class="my-3">
+                  Santorini, Greece, is renowned for its stunning sunsets,
+                  drawing travelers from around the globe to its picturesque
+                  shores.
+                </p>
+                <a href="#" class="btn btn-primary rounded-pill py-2 px-4"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="blog-item">
+              <div class="blog-img">
+                <div class="blog-img-inner">
+                  <img
+                    class="img-fluid w-100 rounded-top"
+                    src="images/blog1.jpg"
+                    alt="Image"
+                  />
+                  <div class="blog-icon">
+                    <a href="#" class="my-auto text-decoration-none"
+                      ><i class="bx bxs-book-add text-white fs-2"></i
+                    ></a>
+                  </div>
+                </div>
+                <div
+                  class="blog-info d-flex align-items-center border border-start-0 border-end-0 justify-content-center"
+                >
+                  <small class="flex-fill text-center border-end py-2"
+                    ><i class="bx bxs-calendar-alt text-primary me-2 fs-5"></i
+                    >28 Jan 2024</small
+                  >
+                  <a
+                    href="#"
+                    class="btn-hover flex-fill text-center text-white border-end py-2"
+                    ><i class="bx bxs-like text-primary me-2 fs-5"></i>1.7K</a
+                  >
+                  <a
+                    href="#"
+                    class="btn-hover flex-fill text-center text-white py-2"
+                    ><i
+                      class="bx bxs-message-rounded text-primary me-2 fs-5"
+                    ></i
+                    >1K</a
+                  >
+                </div>
+              </div>
+              <div class="blog-content border border-top-0 rounded-bottom p-4">
+                <p class="mb-3">
+                  Posted By: <span class="text-secondary">Wisnu Fadhillah</span>
+                </p>
+                <a href="#" class="h4 text-decoration-none"
+                  >Exploring the Ancient Mysteries of Machu Picchu</a
+                >
+                <p class="my-3">
+                  Perched high in the Andes Mountains of Peru, Machu Picchu is a
+                  marvel of ancient engineering and a UNESCO World Heritage
+                  site.
+                </p>
+                <a href="#" class="btn btn-primary rounded-pill py-2 px-4"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="blog-item">
+              <div class="blog-img">
+                <div class="blog-img-inner">
+                  <img
+                    class="img-fluid w-100 rounded-top"
+                    src="images/blog2.jpg"
+                    alt="Image"
+                  />
+                  <div class="blog-icon">
+                    <a href="#" class="my-auto text-decoration-none"
+                      ><i class="bx bxs-book-add text-white fs-2"></i
+                    ></a>
+                  </div>
+                </div>
+                <div
+                  class="blog-info d-flex align-items-center border border-start-0 border-end-0 justify-content-center"
+                >
+                  <small class="flex-fill text-center border-end py-2"
+                    ><i class="bx bxs-calendar-alt text-primary me-2 fs-5"></i
+                    >28 Jan 2024</small
+                  >
+                  <a
+                    href="#"
+                    class="btn-hover flex-fill text-center text-white border-end py-2"
+                    ><i class="bx bxs-like text-primary me-2 fs-5"></i>1.7K</a
+                  >
+                  <a
+                    href="#"
+                    class="btn-hover flex-fill text-center text-white py-2"
+                    ><i
+                      class="bx bxs-message-rounded text-primary me-2 fs-5"
+                    ></i
+                    >1K</a
+                  >
+                </div>
+              </div>
+              <div class="blog-content border border-top-0 rounded-bottom p-4">
+                <p class="mb-3">
+                  Posted By: <span class="text-secondary">Rama Danadipa</span>
+                </p>
+                <a href="#" class="h4 text-decoration-none"
+                  >The Allure of Kyoto's Temples and Gardens</a
+                >
+                <p class="my-3">
+                  Kyoto, Japan, is a city where tradition and tranquility blend
+                  seamlessly. Famous for its historic temples, serene gardens,
+                  and cultural festivals, Kyoto offers a peaceful escape from
+                  the hustle and bustle of modern life.
+                </p>
+                <a href="#" class="btn btn-primary rounded-pill py-2 px-4"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="blog-item">
+              <div class="blog-img">
+                <div class="blog-img-inner">
+                  <img
+                    class="img-fluid w-100 rounded-top"
+                    src="images/blog2.jpg"
+                    alt="Image"
+                  />
+                  <div class="blog-icon">
+                    <a href="#" class="my-auto text-decoration-none"
+                      ><i class="bx bxs-book-add text-white fs-2"></i
+                    ></a>
+                  </div>
+                </div>
+                <div
+                  class="blog-info d-flex align-items-center border border-start-0 border-end-0 justify-content-center"
+                >
+                  <small class="flex-fill text-center border-end py-2"
+                    ><i class="bx bxs-calendar-alt text-primary me-2 fs-5"></i
+                    >28 Jan 2024</small
+                  >
+                  <a
+                    href="#"
+                    class="btn-hover flex-fill text-center text-white border-end py-2"
+                    ><i class="bx bxs-like text-primary me-2 fs-5"></i>1.7K</a
+                  >
+                  <a
+                    href="#"
+                    class="btn-hover flex-fill text-center text-white py-2"
+                    ><i
+                      class="bx bxs-message-rounded text-primary me-2 fs-5"
+                    ></i
+                    >1K</a
+                  >
+                </div>
+              </div>
+              <div class="blog-content border border-top-0 rounded-bottom p-4">
+                <p class="mb-3">
+                  Posted By:
+                  <span class="text-secondary">Salman Abdurrahman</span>
+                </p>
+                <a href="#" class="h4 text-decoration-none"
+                  >The Vibrant Nightlife of New York City's Times Square</a
+                >
+                <p class="my-3">
+                  Times Square in New York City is known as "The Crossroads of
+                  the World," a bustling hub of lights, entertainment, and
+                  excitement.
+                </p>
+                <a href="#" class="btn btn-primary rounded-pill py-2 px-4"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="blog-item">
+              <div class="blog-img">
+                <div class="blog-img-inner">
+                  <img
+                    class="img-fluid w-100 rounded-top"
+                    src="images/blog1.jpg"
+                    alt="Image"
+                  />
+                  <div class="blog-icon">
+                    <a href="#" class="my-auto text-decoration-none"
+                      ><i class="bx bxs-book-add text-white fs-2"></i
+                    ></a>
+                  </div>
+                </div>
+                <div
+                  class="blog-info d-flex align-items-center border border-start-0 border-end-0 justify-content-center"
+                >
+                  <small class="flex-fill text-center border-end py-2"
+                    ><i class="bx bxs-calendar-alt text-primary me-2 fs-5"></i
+                    >28 Jan 2024</small
+                  >
+                  <a
+                    href="#"
+                    class="btn-hover flex-fill text-center text-white border-end py-2"
+                    ><i class="bx bxs-like text-primary me-2 fs-5"></i>1.7K</a
+                  >
+                  <a
+                    href="#"
+                    class="btn-hover flex-fill text-center text-white py-2"
+                    ><i
+                      class="bx bxs-message-rounded text-primary me-2 fs-5"
+                    ></i
+                    >1K</a
+                  >
+                </div>
+              </div>
+              <div class="blog-content border border-top-0 rounded-bottom p-4">
+                <p class="mb-3">
+                  Posted By: <span class="text-secondary">Wisnu Fadhillah</span>
+                </p>
+                <a href="#" class="h4 text-decoration-none"
+                  >The Serenity of Bali's Rice Terraces and Beaches</a
+                >
+                <p class="my-3">
+                  Bali, Indonesia, is an island paradise known for its stunning
+                  natural beauty and rich cultural heritage.
+                </p>
+                <a href="#" class="btn btn-primary rounded-pill py-2 px-4"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="blog-item">
+              <div class="blog-img">
+                <div class="blog-img-inner">
+                  <img
+                    class="img-fluid w-100 rounded-top"
+                    src="images/blog1.jpg"
+                    alt="Image"
+                  />
+                  <div class="blog-icon">
+                    <a href="#" class="my-auto text-decoration-none"
+                      ><i class="bx bxs-book-add text-white fs-2"></i
+                    ></a>
+                  </div>
+                </div>
+                <div
+                  class="blog-info d-flex align-items-center border border-start-0 border-end-0 justify-content-center"
+                >
+                  <small class="flex-fill text-center border-end py-2"
+                    ><i class="bx bxs-calendar-alt text-primary me-2 fs-5"></i
+                    >28 Jan 2024</small
+                  >
+                  <a
+                    href="#"
+                    class="btn-hover flex-fill text-center text-white border-end py-2"
+                    ><i class="bx bxs-like text-primary me-2 fs-5"></i>1.7K</a
+                  >
+                  <a
+                    href="#"
+                    class="btn-hover flex-fill text-center text-white py-2"
+                    ><i
+                      class="bx bxs-message-rounded text-primary me-2 fs-5"
+                    ></i
+                    >1K</a
+                  >
+                </div>
+              </div>
+              <div class="blog-content border border-top-0 rounded-bottom p-4">
+                <p class="mb-3">
+                  Posted By:
+                  <span class="text-secondary">Salman Abdurrahman</span>
+                </p>
+                <a href="#" class="h4 text-decoration-none"
+                  >The Majestic Beauty of Banff National Park</a
+                >
+                <p class="my-3">
+                  Nestled in the heart of the Canadian Rockies, Banff National
+                  Park is a natural wonderland known for its stunning landscapes
+                  and outdoor adventures.
+                </p>
+                <a href="#" class="btn btn-primary rounded-pill py-2 px-4"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ? blog end -->
 
-		<!-- ? subscribe start -->
-		<div class="container-fluid subscribe py-5">
-			<div class="container text-center py-5">
-				<div class="mx-auto text-center" style="max-width: 900px">
-					<h5 class="subscribe-title px-3">Subscribe</h5>
-					<h1 class="text-white mb-4">Our Newsletter</h1>
-					<p class="text-white mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tempore nam, architecto doloremque velit explicabo? Voluptate sunt eveniet fuga eligendi! Expedita laudantium fugiat corrupti eum cum repellat a laborum quasi.</p>
-					<div class="position-relative mx-auto">
-						<input class="form-control border-primary rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email" id="subscribeInput3" />
-						<button type="button" class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 px-4 mt-2 me-2" id="subscribeButton3">Subscribe</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- ? subscribe end -->
+    <!-- ? subscribe start -->
+    <div class="container-fluid subscribe py-5">
+      <div class="container text-center py-5">
+        <div class="mx-auto text-center" style="max-width: 900px">
+          <h5 class="subscribe-title px-3">Subscribe</h5>
+          <h1 class="text-white mb-4">Our Newsletter</h1>
+          <p class="text-white mb-5">
+            Don't miss the latest updates from us! Enter your email below to
+            subscribe to our newsletter:
+          </p>
+          <div class="position-relative mx-auto">
+            <input
+              class="form-control border-primary rounded-pill w-100 py-3 ps-4 pe-5"
+              type="text"
+              placeholder="Your email"
+              id="subscribeInput3"
+            />
+            <button
+              type="button"
+              class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 px-4 mt-2 me-2"
+              id="subscribeButton3"
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ? subscribe end -->
 
-		<!-- ? footer start -->
-		<div class="container-fluid footer py-5">
-			<div class="container py-5">
-				<div class="row g-5 d-flex">
-					<div class="col-md-6 col-lg-4 col-xl-4">
-						<div class="footer-item d-flex flex-column">
-							<h4 class="mb-4 text-white">Contact Information</h4>
-							<a href=""><i class="fas fa-angle-right me-2"></i> 732 W 6th St, Suite 1600</a>
-							<a href=""><i class="fas fa-angle-right me-2"></i> New York, NY 10011</a>
-							<a href=""><i class="fas fa-angle-right me-2"></i> +1 212-344-1230</a>
-							<a href=""><i class="fas fa-angle-right me-2"></i> rwsofficial@gmail.com</a>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-4 col-xl-4">
-						<div class="footer-item d-flex flex-column">
-							<h4 class="mb-4 text-white">Quick Link</h4>
-							<a href="index.html"><i class="fas fa-angle-right me-2"></i>Home</a>
-							<a href="destinations.html"><i class="fas fa-angle-right me-2"></i>Destinations</a>
-							<a href="blog.html"><i class="fas fa-angle-right me-2"></i>Blog</a>
-							<a href="about.html"><i class="fas fa-angle-right me-2"></i>About Us</a>
-							<a href="contact.html"><i class="fas fa-angle-right me-2"></i>Contact</a>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-4 col-xl-4">
-						<div class="footer-item d-flex flex-column">
-							<h4 class="mb-4 text-white">Support</h4>
-							<a href=""><i class="fas fa-angle-right me-2"></i>Contact</a>
-							<a href=""><i class="fas fa-angle-right me-2"></i>Legal Notice</a>
-							<a href=""><i class="fas fa-angle-right me-2"></i>Privacy Policy</a>
-							<a href=""><i class="fas fa-angle-right me-2"></i>Terms and Conditions</a>
-							<a href=""><i class="fas fa-angle-right me-2"></i>Sitemap</a>
-							<a href=""><i class="fas fa-angle-right me-2"></i>Cookie policy</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- ? footer end -->
+    <!-- ? footer start -->
+    <div class="container-fluid footer py-5">
+      <div class="container py-5">
+        <div class="row g-5 d-flex">
+          <div class="col-md-6 col-lg-4 col-xl-4">
+            <div class="footer-item d-flex flex-column">
+              <h4 class="mb-4 text-white">Contact Information</h4>
+              <a href=""
+                ><i class="fas fa-angle-right me-2"></i> 732 W 6th St, Suite
+                1600</a
+              >
+              <a href=""
+                ><i class="fas fa-angle-right me-2"></i> New York, NY 10011</a
+              >
+              <a href=""
+                ><i class="fas fa-angle-right me-2"></i> +1 212-344-1230</a
+              >
+              <a href=""
+                ><i class="fas fa-angle-right me-2"></i>
+                rwsofficial@gmail.com</a
+              >
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-4">
+            <div class="footer-item d-flex flex-column">
+              <h4 class="mb-4 text-white">Quick Link</h4>
+              <a href="index.html"
+                ><i class="fas fa-angle-right me-2"></i>Home</a
+              >
+              <a href="destinations.html"
+                ><i class="fas fa-angle-right me-2"></i>Destinations</a
+              >
+              <a href="blog.html"
+                ><i class="fas fa-angle-right me-2"></i>Blog</a
+              >
+              <a href="about.html"
+                ><i class="fas fa-angle-right me-2"></i>About Us</a
+              >
+              <a href="contact.html"
+                ><i class="fas fa-angle-right me-2"></i>Contact</a
+              >
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-4">
+            <div class="footer-item d-flex flex-column">
+              <h4 class="mb-4 text-white">Support</h4>
+              <a href=""><i class="fas fa-angle-right me-2"></i>Contact</a>
+              <a href=""><i class="fas fa-angle-right me-2"></i>Legal Notice</a>
+              <a href=""
+                ><i class="fas fa-angle-right me-2"></i>Privacy Policy</a
+              >
+              <a href=""
+                ><i class="fas fa-angle-right me-2"></i>Terms and Conditions</a
+              >
+              <a href=""><i class="fas fa-angle-right me-2"></i>Sitemap</a>
+              <a href=""
+                ><i class="fas fa-angle-right me-2"></i>Cookie policy</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ? footer end -->
 
-		<!-- ? copyright start -->
-		<div class="container-fluid copyright text-body py-4">
-			<div class="container text-light">
-				<div class="row g-4 align-items-center">
-					<div class="col-md-6 text-center mb-md-0 mx-auto align-items-center justify-content-center">
-						<a class="text-white" href="#" style="text-decoration: none">Website Developed & Managed by RWS Tour Agent</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- ? copyright end -->
+    <!-- ? copyright start -->
+    <div class="container-fluid copyright text-body py-4">
+      <div class="container text-light">
+        <div class="row g-4 align-items-center">
+          <div
+            class="col-md-6 text-center mb-md-0 mx-auto align-items-center justify-content-center"
+          >
+            <a class="text-white" href="#" style="text-decoration: none"
+              >Website Developed & Managed by RWS Tour Agent</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ? copyright end -->
 
-		<!-- ? back to top start -->
-		<a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top">
-			<i class="bx bx-up-arrow-alt fs-4 d-block"></i>
-		</a>
-		<!-- ? back to top end -->
+    <!-- ? back to top start -->
+    <a
+      href="#"
+      class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"
+    >
+      <i class="bx bx-up-arrow-alt fs-4 d-block"></i>
+    </a>
+    <!-- ? back to top end -->
 
-		<!-- bootstrap -->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-		<!-- custom js -->
-		<script src="js/script.js"></script>
-	</body>
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+  </body>
 </html>
