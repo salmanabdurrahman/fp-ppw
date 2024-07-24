@@ -1,0 +1,14 @@
+{
+	"trailingComma": "es5",
+	"tabWidth": 4,
+	"printWidth": 600,
+	"htmlWhitespaceSensitivity": "css",
+	"insertPragma": false,
+	"jsxSingleQuote": true,
+	"proseWrap": "preserve",
+	"requirePragma": false,
+	"useTabs": true,
+	"singleQuote": true,
+	"vueIndentScriptAndStyle": false,
+	"singleAttributePerLine": false
+}
