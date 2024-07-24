@@ -421,3 +421,74 @@
 }
 /* ? testimonial end */
 /* ! index.html end */
+
+/* ! destinations.html start */
+/* ? hero start */
+.hero-second {
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('/images/package.jpg') no-repeat center center;
+	background-size: cover;
+	height: 50vh;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+/* ? hero end */
+
+/* ? gallery start */
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: 0.5s ease;
+	background-color: rgba(19, 53, 123, 0.8);
+}
+
+.overlay:hover {
+	opacity: 1;
+}
+
+.overlay p {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* ? gallery end */
+
+/* ? booking start */
+.booking {
+	background-color: rgba(19, 53, 123, 0.8);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.booking .container .section-booking-title {
+	position: relative;
+	display: inline-block;
+	text-transform: uppercase;
+	color: var(--bs-primary);
+	font-weight: 700;
+}
+
+.booking .container form .btn.btn-primary {
+	box-shadow: inset 0 0 0 0 var(--bs-primary);
+}
+
+.booking .container form .btn.btn-primary:hover {
+	box-shadow: inset 800px 0 0 0 var(--bs-light) !important;
+	color: var(--bs-primary) !important;
+}
+/* ? booking end */
+/* ! destinations.html end */
