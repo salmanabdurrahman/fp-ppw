@@ -1,10 +1,10 @@
-**# RWS Tour Website**
+# RWS Tour Website
 
-**Deskripsi**
+## Deskripsi
 
 Ini adalah sebuah website travel sederhana yang dibangun menggunakan HTML, Bootstrap 5, dan JavaScript sebagai proyek akhir mata kuliah Pengenalan Perancangan Web. Website ini dirancang untuk memberikan informasi tentang berbagai destinasi wisata, paket perjalanan, dan layanan terkait perjalanan lainnya.
 
-**Fitur Utama**
+## Fitur Utama
 
 -   **Halaman Utama:** Menampilkan tampilan yang menarik dengan gambar utama yang memukau, informasi singkat tentang website, dan tombol ajakan bertindak (call to action) untuk menjelajahi lebih lanjut.
 -   **Destinasi:** Menyediakan daftar destinasi wisata populer dengan gambar, deskripsi singkat, dan informasi harga paket.
@@ -12,13 +12,13 @@ Ini adalah sebuah website travel sederhana yang dibangun menggunakan HTML, Boots
 -   **Testimonial:** Menampilkan ulasan positif dari pelanggan untuk membangun kepercayaan.
 -   **Kontak:** Menyediakan formulir kontak atau informasi kontak untuk memudahkan pengguna menghubungi tim kami.
 
-**Teknologi yang Digunakan**
+## Teknologi yang Digunakan
 
 -   **HTML:** Struktur dasar dari website.
 -   **Bootstrap:** Framework CSS yang digunakan untuk membuat tampilan website menjadi responsif dan menarik.
 -   **JavaScript:** Digunakan untuk menambahkan interaktivitas pada website, seperti efek animasi atau validasi formulir.
 
-**Struktur Direktori**
+## Struktur Direktori
 
 ```
 RWS-Tour-Website/
@@ -38,7 +38,7 @@ RWS-Tour-Website/
 └── ...
 ```
 
-**Cara Menjalankan**
+## Cara Menjalankan
 
 1. **Clone Repository:** Jika Anda mendapatkan kode dari repositori Git, clone repository tersebut ke komputer Anda.
 2. **Buka dengan Browser:** Buka file `index.html` menggunakan browser web Anda.
